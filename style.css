@@ -1,48 +1,14 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
-}
-.heart-container{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-}
-.love_word{
-    color: #f505b9;
-    font-size: 1.4rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-shadow: 0 0 10px #fff, 0 0 20px #f505b9;
-    letter-spacing: 2px;
-    white-space: nowrap;
-
-    animation: horizontal 10000ms infinite alternate ease-in-out;
+    background:#000;
+    overflow:hidden;
 }
 
-.love_word:nth-child(2){
-    animation-delay: -300ms;
-}
-
-.love_word:nth-child(3){
-    animation-delay: -600ms;
-}
-
-.love_word:nth-child(4){
-    animation-delay: -900ms;
-}
-
-@keyframes horizontal{
-    0%{
-        transform: translateX(-40%) rotateZ(-30deg);
-    }
-    100%{
-        transform: translateX(40%) rotateZ(-30deg);
-    }
+canvas{
+    display:block;
 }
